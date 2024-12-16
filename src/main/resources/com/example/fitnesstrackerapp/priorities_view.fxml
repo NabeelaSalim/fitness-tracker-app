@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fitnesstrackerapp.admin.controller.PrioritiesController">
+   <children>
+      <Label fx:id="lb_prio" layoutX="4.0" layoutY="32.0" prefHeight="50.0" prefWidth="593.0" text="          Top Priorities">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="cBox_body" layoutX="155.0" layoutY="129.0" mnemonicParsing="false" text="Full Body" />
+      <CheckBox fx:id="cBox_Abs" layoutX="155.0" layoutY="200.0" mnemonicParsing="false" text="Abs" />
+      <CheckBox fx:id="cBox_arms" layoutX="155.0" layoutY="164.0" mnemonicParsing="false" text="Toned Arms" />
+      <CheckBox fx:id="cBox_Core" layoutX="155.0" layoutY="235.0" mnemonicParsing="false" text="Strong Core" />
+      <CheckBox fx:id="cBox_cardio" layoutX="155.0" layoutY="269.0" mnemonicParsing="false" text="Cardio Endurance" />
+      <CheckBox fx:id="cBox_flexMob" layoutX="155.0" layoutY="308.0" mnemonicParsing="false" text="Flexibility and Mobility" />
+      <Button fx:id="btn_cont" layoutX="273.0" layoutY="337.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="114.0" text="CONTINUE..." />
+      <ImageView fitHeight="206.0" fitWidth="89.0" layoutX="24.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/Screenshot%202024-12-09%20at%2019.27.14.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="140.0" fitWidth="121.0" layoutX="300.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/Screenshot%202024-12-09%20at%2019.42.10.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

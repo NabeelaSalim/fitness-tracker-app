@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fitnesstrackerapp.admin.controller.LowerBodyController">
+   <children>
+      <Label layoutX="121.0" layoutY="33.0" prefHeight="118.0" prefWidth="615.0" text="  Lower Body">
+         <font>
+            <Font name="System Bold" size="96.0" />
+         </font></Label>
+      <HBox layoutX="20.0" layoutY="20.0" prefHeight="26.0" prefWidth="500.0" />
+      <Label fx:id="welcomeText" layoutX="22.0" layoutY="175.0" prefHeight="15.0" prefWidth="271.0" text="   Beginner 3 sets">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <GridPane gridLinesVisible="true" layoutX="26.0" layoutY="201.0" prefHeight="266.0" prefWidth="794.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <TextArea prefHeight="47.0" prefWidth="284.0" promptText="Pushups" style="-fx-background-color: black;" text="Step-ups                    Reps:10 per leg&#10;                                       Rest:45 sec&#10;">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </TextArea>
+            <TextArea layoutX="10.0" layoutY="8.0" prefHeight="200.0" prefWidth="200.0" promptText="Pushups" style="-fx-background-color: black;" text="Step-ups                    Reps:12 per leg&#10;                                       Rest:45 sec" GridPane.columnIndex="1">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </TextArea>
+            <TextArea layoutX="10.0" layoutY="8.0" prefHeight="200.0" prefWidth="200.0" promptText="Pushups" style="-fx-background-color: black;" text="Step-ups                    Reps:15 per leg&#10;                                       Rest:45 sec" GridPane.columnIndex="2">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </TextArea>
+            <TextArea prefHeight="200.0" prefWidth="200.0" text="Glute Bridge                          Reps:15 per leg&#10;                                                   Rest:45 sec" GridPane.rowIndex="1">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </TextArea>
+            <TextArea prefHeight="200.0" prefWidth="200.0" text="Glute Bridge                          Reps:18 per leg&#10;                                                   Rest:45 " GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </TextArea>
+            <TextArea prefHeight="200.0" prefWidth="200.0" text="Glute Bridge                          Reps:20 per leg&#10;                                                   Rest:45 " GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </TextArea>
+            <TextArea prefHeight="44.0" prefWidth="287.0" text="Calf Raises                   Reps:12-15 &#10;                                         Rest:45 sec" GridPane.rowIndex="2">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </TextArea>
+            <TextArea prefHeight="200.0" prefWidth="200.0" text="Calf Raises                   Reps:15-18&#10;                                         Rest:45 sec" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </TextArea>
+            <TextArea prefHeight="200.0" prefWidth="200.0" text="Calf Raises                   Reps:18-20&#10;                                         Rest:45 sec" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </TextArea>
+            <TextArea prefHeight="200.0" prefWidth="200.0" text="Bulgarian Split Squat      Reps:8-10 per leg&#10;                                                Rest:45 sec" GridPane.rowIndex="3">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </TextArea>
+            <TextArea prefHeight="200.0" prefWidth="200.0" text="Bulgarian Split Squat      Reps:10-12 per leg&#10;                                                Rest:45 sec" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </TextArea>
+            <TextArea prefHeight="200.0" prefWidth="200.0" text="Bulgarian Split Squat      Reps:13-15 per leg&#10;                                                Rest:45 sec" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </TextArea>
+            <TextArea prefHeight="200.0" prefWidth="200.0" text="Leg Press                     Reps:12-15&#10;                                         Rest:45 sec" GridPane.rowIndex="4">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </TextArea>
+            <TextArea prefHeight="200.0" prefWidth="200.0" text="Leg Press                     Reps:15-18&#10;                                         Rest:45 sec" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </TextArea>
+            <TextArea prefHeight="200.0" prefWidth="200.0" text="Leg Press                     Reps:18-20&#10;                                         Rest:45 sec" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </TextArea>
+         </children>
+      </GridPane>
+      <Button fx:id="btn_lowerbodystartworkout" layoutX="369.0" layoutY="470.0" mnemonicParsing="false" text="Start Workout" />
+      <Label fx:id="welcomeText1" layoutX="299.0" layoutY="175.0" prefHeight="15.0" prefWidth="248.0" text="Intermediate 4 sets">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="welcomeText11" layoutX="602.0" layoutY="174.0" prefHeight="17.0" prefWidth="136.0" text="Advanced 5 sets">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="111.0" fitWidth="158.0" layoutX="536.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/img_2.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

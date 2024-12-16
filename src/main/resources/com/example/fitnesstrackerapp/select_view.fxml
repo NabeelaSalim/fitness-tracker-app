@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fitnesstrackerapp.admin.controller.SelectController">
+   <children>
+      <Button fx:id="btn_workSched" layoutX="256.0" layoutY="26.0" mnemonicParsing="false" text="Working Schedule" />
+      <Button fx:id="btn_progress" layoutX="102.0" layoutY="121.0" mnemonicParsing="false" text="progress Visualization" />
+      <Button fx:id="btn_nutrition" layoutX="393.0" layoutY="121.0" mnemonicParsing="false" text="Nutrition Tracking" />
+      <Button fx:id="btn_fitGoals" layoutX="102.0" layoutY="245.0" mnemonicParsing="false" text="Fitness Goals" />
+      <Button fx:id="btn_calendar" layoutX="427.0" layoutY="245.0" mnemonicParsing="false" text="Calendar" />
+      <ImageView fitHeight="69.0" fitWidth="84.0" layoutX="268.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/Screenshot%202024-12-09%20at%2020.26.41.png" />
+         </image></ImageView>
+      <ImageView fitHeight="80.0" fitWidth="84.0" layoutX="112.0" layoutY="155.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/Screenshot%202024-12-09%20at%2020.27.16.png" />
+         </image></ImageView>
+      <ImageView fitHeight="69.0" fitWidth="110.0" layoutX="403.0" layoutY="163.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/Screenshot%202024-12-09%20at%2020.26.58.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="91.0" fitWidth="126.0" layoutX="84.0" layoutY="284.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/Screenshot%202024-12-09%20at%2020.26.49.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="80.0" fitWidth="126.0" layoutX="412.0" layoutY="284.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/Screenshot%202024-12-09%20at%2020.27.32.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

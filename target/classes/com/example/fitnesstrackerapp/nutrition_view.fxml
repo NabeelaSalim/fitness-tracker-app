@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fitnesstrackerapp.admin.controller.NutritionController">
+   <children>
+      <Label fx:id="lb_nutrition" layoutX="132.0" layoutY="27.0" text="Daily Nutrition">
+         <font>
+            <Font name="System Bold" size="46.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnBreakfast" layoutX="78.0" layoutY="171.0" mnemonicParsing="false" text="BREAKFAST" />
+      <Button fx:id="btnDinner" layoutX="440.0" layoutY="171.0" mnemonicParsing="false" text="DINNER" />
+      <StackPane fx:id="sp" layoutX="68.0" layoutY="267.0" prefHeight="57.0" prefWidth="493.0" />
+      <Button fx:id="btn_back" layoutX="471.0" layoutY="350.0" mnemonicParsing="false" text="BACK" />
+      <ImageView fitHeight="104.0" fitWidth="163.0" layoutX="429.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/Screenshot%202024-12-09%20at%2021.04.37.png" />
+         </image></ImageView>
+      <ImageView fitHeight="40.0" fitWidth="41.0" layoutX="8.0" layoutY="255.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="menuBreakfast" layoutX="95.0" layoutY="196.0" prefHeight="40.0" prefWidth="391.0" text="Egg and avocado toast OR Oats with protein OR Greek yogurt partfait" />
+      <Label fx:id="menuDinner" layoutX="57.0" layoutY="208.0" text="Grilled salmon and sweet potato OR Chicken fajita bowl OR Turkey meatballs and zucchini" />
+      <Label fx:id="menuLunch" layoutX="136.0" layoutY="207.0" text="Grilled chiken salad OR Turkey with hummus OR Beef and veggies" />
+      <Button fx:id="btnLunch" layoutX="278.0" layoutY="240.0" mnemonicParsing="false" text="LUNCH" />
+   </children>
+</AnchorPane>

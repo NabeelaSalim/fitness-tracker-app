@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fitnesstrackerapp.admin.controller.FitGoalsController">
+   <children>
+      <!-- Title -->
+      <Label fx:id="lb_fg" layoutX="200.0" layoutY="20.0" text="Fitness Goals">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+
+      <!-- Back Button -->
+      <Button fx:id="btn_back" layoutX="495.0" layoutY="353.0" mnemonicParsing="false" text="BACK" />
+
+      <!-- Fitness Goals Labels -->
+      <Label layoutX="150.0" layoutY="100.0" text="Calories Burned:" />
+      <Label fx:id="caloriesLabel" layoutX="350.0" layoutY="100.0" text="0" />
+
+      <Label layoutX="150.0" layoutY="176.0" text="Number of Workouts:" />
+      <Label fx:id="workoutCountLabel" layoutX="350.0" layoutY="176.0" text="0" />
+
+      <Label layoutX="150.0" layoutY="248.0" text="Distance Covered (miles):" />
+      <Label fx:id="distanceLabel" layoutX="354.0" layoutY="248.0" text="0" />
+      <ImageView fitHeight="44.0" fitWidth="50.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="44.0" fitWidth="56.0" layoutX="70.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/Screenshot%202024-12-13%20at%2014.10.21.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="34.0" fitWidth="39.0" layoutX="81.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/Screenshot%202024-12-13%20at%2014.11.10.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="34.0" fitWidth="39.0" layoutX="79.0" layoutY="241.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/Screenshot%202024-12-13%20at%2014.10.42.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="134.0" fitWidth="179.0" layoutX="403.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/Screenshot%202024-12-09%20at%2019.55.21.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

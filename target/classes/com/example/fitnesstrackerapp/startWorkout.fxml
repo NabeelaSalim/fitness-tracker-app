@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fitnesstrackerapp.admin.controller.StartWorkoutController">
+   <children>
+      <Button fx:id="btn_st" layoutX="38.0" layoutY="213.0" mnemonicParsing="false" text="start workout" />
+      <Button fx:id="btn_finish" layoutX="472.0" layoutY="213.0" mnemonicParsing="false" text="finish workout" />
+      <StackPane layoutX="111.0" layoutY="44.0" prefHeight="140.0" prefWidth="379.0">
+         <children>
+            <Label fx:id="lb_start" prefHeight="97.0" prefWidth="292.0" text="YOU STARTED YOUR WORKOUT">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lb_finish" prefHeight="87.0" prefWidth="344.0" text="YOU FINISHED WORKING OUT">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Label>
+         </children></StackPane>
+      <Button fx:id="btn_back" layoutX="57.0" layoutY="349.0" mnemonicParsing="false" text="BACK" />
+      <ImageView fitHeight="166.0" fitWidth="272.0" layoutX="169.0" layoutY="184.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/Screenshot%202024-12-13%20at%2014.19.46.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

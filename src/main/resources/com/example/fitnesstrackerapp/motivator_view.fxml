@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fitnesstrackerapp.admin.controller.MotivatorController">
+   <children>
+      <Label fx:id="lb_mot" layoutX="14.0" layoutY="30.0" prefHeight="52.0" prefWidth="625.0" text="Whats your go-to motivator?">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="cBox_loseWeight" layoutX="201.0" layoutY="90.0" mnemonicParsing="false" text="Lose weight" />
+      <CheckBox fx:id="cBox_active" layoutX="203.0" layoutY="133.0" mnemonicParsing="false" text="Be more active" />
+      <CheckBox fx:id="cBox_bStrength" layoutX="205.0" layoutY="182.0" mnemonicParsing="false" text="Build Strength" />
+      <CheckBox fx:id="cBox_recharge" layoutX="208.0" layoutY="229.0" mnemonicParsing="false" text="Recharge" />
+      <CheckBox fx:id="cBox_learnBasics" layoutX="208.0" layoutY="277.0" mnemonicParsing="false" text="Learn Basics" />
+      <CheckBox fx:id="cBox_health" layoutX="208.0" layoutY="322.0" mnemonicParsing="false" text="Improve Health" />
+      <Button fx:id="btn_continue" layoutX="345.0" layoutY="337.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="114.0" text="CONTINUE..." />
+      <ImageView fitHeight="41.0" fitWidth="46.0" layoutX="148.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/Screenshot%202024-12-08%20at%2017.10.00.png" />
+         </image></ImageView>
+      <ImageView fitHeight="41.0" fitWidth="57.0" layoutX="317.0" layoutY="121.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/Screenshot%202024-12-08%20at%2017.10.12.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="41.0" fitWidth="57.0" layoutX="139.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/Screenshot%202024-12-08%20at%2017.10.19.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="41.0" fitWidth="49.0" layoutX="295.0" layoutY="217.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/Screenshot%202024-12-08%20at%2017.10.25.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="41.0" fitWidth="49.0" layoutX="143.0" layoutY="265.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/Screenshot%202024-12-08%20at%2017.10.32.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="41.0" fitWidth="49.0" layoutX="327.0" layoutY="295.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/Screenshot%202024-12-08%20at%2017.10.58.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
