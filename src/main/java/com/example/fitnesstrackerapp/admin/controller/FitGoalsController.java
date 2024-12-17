@@ -10,10 +10,6 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class FitGoalsController implements Initializable {
-   @FXML
-    public Label lb_fg;
-    @FXML
-    public Button btn_back;
 
     @FXML
     private Label caloriesLabel;
@@ -24,15 +20,16 @@ public class FitGoalsController implements Initializable {
     @FXML
     private Label distanceLabel;
 
+    @FXML
+    private Button btn_back;
+
     // Static variables to hold the accumulated fitness data
     public static int totalCalories = 0;
     public static int totalWorkouts = 0;
     public static double totalDistance = 0.0;
-;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        // Update UI when the scene is loaded
         updateUI();
     }
 
@@ -40,22 +37,19 @@ public class FitGoalsController implements Initializable {
         totalCalories += caloriesToAdd;
         totalWorkouts += workoutsToAdd;
         totalDistance += distanceToAdd;
+
+        // Update the ProgressVisualizationController with new data
+        ProgressVisualizationController.refreshData(caloriesToAdd, workoutsToAdd, distanceToAdd);
     }
 
-
-    public void updateUI() {
+    private void updateUI() {
         caloriesLabel.setText(String.valueOf(totalCalories));
         workoutCountLabel.setText(String.valueOf(totalWorkouts));
         distanceLabel.setText(String.format("%.2f", totalDistance));
 
         btn_back.setOnAction(event -> {
             UserService userService = new UserService();
-            userService.changeScence1(event,"select_view.fxml", "select an option");
-
-
+            userService.changeScence1(event, "select_view.fxml", "Select an Option");
         });
-
-    }  }
-
-
-
+    }
+}

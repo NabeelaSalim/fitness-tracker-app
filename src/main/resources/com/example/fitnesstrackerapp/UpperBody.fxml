@@ -115,12 +115,12 @@
             <Font name="System Bold" size="13.0" />
          </font>
       </Label>
-      <ImageView fitHeight="101.0" fitWidth="104.0" layoutX="555.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="101.0" fitWidth="104.0" layoutX="597.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../images/img_4.png" />
          </image>
       </ImageView>
-      <Label layoutX="140.0" layoutY="22.0" prefHeight="80.0" prefWidth="488.0" text="Upper Body">
+      <Label layoutX="133.0" layoutY="22.0" prefHeight="80.0" prefWidth="488.0" text="Upper Body">
          <font>
             <Font name="System Bold" size="89.0" />
          </font></Label>

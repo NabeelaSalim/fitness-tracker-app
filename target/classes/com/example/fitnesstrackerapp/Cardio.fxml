@@ -114,12 +114,12 @@
             <Font name="System Bold" size="13.0" />
          </font>
       </Label>
-      <ImageView fitHeight="113.0" fitWidth="177.0" layoutX="470.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="113.0" fitWidth="177.0" layoutX="529.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../images/img_6.png" />
          </image>
       </ImageView>
-      <Label layoutX="136.0" layoutY="16.0" prefHeight="89.0" prefWidth="450.0" text="     cardio">
+      <Label layoutX="117.0" layoutY="33.0" prefHeight="89.0" prefWidth="450.0" text="     cardio">
          <font>
             <Font name="System Bold" size="96.0" />
          </font>

@@ -5,28 +5,31 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fitnesstrackerapp.admin.controller.WelcomeController">
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fitnesstrackerapp.admin.controller.WelcomeController">
    <children>
-      <Label fx:id="lb_welcome" layoutX="151.0" layoutY="31.0" prefHeight="26.0" prefWidth="229.0" text="Welcome!">
+      <Label fx:id="lb_welcome" layoutX="245.0" layoutY="70.0" prefHeight="50.0" prefWidth="273.0" text="Welcome!">
          <font>
-            <Font name="System Bold" size="40.0" />
+            <Font name="System Bold" size="57.0" />
          </font>
       </Label>
-      <Label fx:id="lb_one" layoutX="280.0" layoutY="143.0" prefHeight="42.0" prefWidth="283.0" text="     you're fully prepared,">
+      <Label fx:id="lb_one" layoutX="211.0" layoutY="229.0" prefHeight="47.0" prefWidth="416.0" text="     you're fully prepared,">
          <font>
-            <Font name="System Bold" size="28.0" />
+            <Font name="System Bold" size="38.0" />
          </font></Label>
-      <Label fx:id="lb_two" layoutX="257.0" layoutY="172.0" prefHeight="56.0" prefWidth="329.0" text="let's hit that target together!">
+      <Label fx:id="lb_two" layoutX="211.0" layoutY="282.0" prefHeight="56.0" prefWidth="537.0" text="let's hit that target together!">
          <font>
-            <Font size="26.0" />
+            <Font name="System Bold" size="44.0" />
          </font></Label>
-      <Button fx:id="btn_start" layoutX="345.0" layoutY="268.0" mnemonicParsing="false" text="Let's get started" />
-      <ImageView fitHeight="226.0" fitWidth="200.0" layoutX="22.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+      <Button fx:id="btn_start" layoutX="509.0" layoutY="378.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="171.0" text="Let's get started">
+         <font>
+            <Font size="21.0" />
+         </font></Button>
+      <ImageView fitHeight="226.0" fitWidth="200.0" layoutX="29.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../images/Screenshot%202024-12-09%20at%2020.22.40.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="136.0" fitWidth="200.0" layoutX="380.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="136.0" fitWidth="200.0" layoutX="566.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../images/Screenshot%202024-12-09%20at%2020.22.49.png" />
          </image>

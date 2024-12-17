@@ -20,6 +20,7 @@ public class SelectController implements Initializable {
     @FXML
     public Button btn_calendar;
 
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         btn_workSched.setOnAction(event -> {
@@ -28,7 +29,7 @@ public class SelectController implements Initializable {
         });
         btn_progress.setOnAction(event -> {
             UserService userService = new UserService();
-            userService.changeScence1(event,"seeProgress.fxml", "Select your fitness level");
+            userService.changeScence1(event,"ProgressVisualization.fxml", "Select your fitness level");
         });
 
 
@@ -44,6 +45,8 @@ public class SelectController implements Initializable {
             UserService userService = new UserService();
             userService.changeScence1(event,"calendar_view.fxml", "Select your fitness level");
         });
+
+
 
     }
 }

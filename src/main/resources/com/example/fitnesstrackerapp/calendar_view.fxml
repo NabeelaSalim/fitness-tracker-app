@@ -5,18 +5,18 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fitnesstrackerapp.admin.controller.CalendarView">
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fitnesstrackerapp.admin.controller.CalendarView">
    <children>
-      <Label fx:id="lb_calendar" layoutX="225.0" layoutY="33.0" prefHeight="45.0" prefWidth="222.0" text="Calendar">
+      <Label fx:id="lb_calendar" layoutX="241.0" layoutY="34.0" prefHeight="45.0" prefWidth="222.0" text="Calendar">
          <font>
             <Font name="System Bold" size="51.0" />
          </font>
       </Label>
-      <DatePicker fx:id="datePicker" layoutX="225.0" layoutY="127.0" />
-      <Button fx:id="btn_did" layoutX="428.0" layoutY="313.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="113.0" text="i did workout" />
-      <Button fx:id="btn_skipped" layoutX="112.0" layoutY="313.0" mnemonicParsing="false" text="i skipped workout" />
-      <Button fx:id="btn_back" layoutX="457.0" layoutY="361.0" mnemonicParsing="false" text="BACK" />
-      <ImageView fitHeight="95.0" fitWidth="154.0" layoutX="440.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+      <DatePicker fx:id="datePicker" layoutX="307.0" layoutY="140.0" />
+      <Button fx:id="btn_did" layoutX="475.0" layoutY="313.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="113.0" text="i did workout" />
+      <Button fx:id="btn_skipped" layoutX="185.0" layoutY="313.0" mnemonicParsing="false" text="i skipped workout" />
+      <Button fx:id="btn_back" layoutX="500.0" layoutY="371.0" mnemonicParsing="false" text="BACK" />
+      <ImageView fitHeight="95.0" fitWidth="154.0" layoutX="500.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../images/Screenshot%202024-12-09%20at%2020.27.32.png" />
          </image>

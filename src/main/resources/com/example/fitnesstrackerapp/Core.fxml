@@ -136,12 +136,12 @@
             <Font name="System Bold" size="13.0" />
          </font>
       </Label>
-      <ImageView fitHeight="101.0" fitWidth="174.0" layoutX="155.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="101.0" fitWidth="174.0" layoutX="56.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../images/img.png" />
          </image>
       </ImageView>
-      <Label layoutX="219.0" layoutY="18.0" prefHeight="135.0" prefWidth="459.0" text="Core/abs">
+      <Label layoutX="209.0" layoutY="10.0" prefHeight="135.0" prefWidth="459.0" text="Core/abs">
          <font>
             <Font name="System Bold" size="90.0" />
          </font>

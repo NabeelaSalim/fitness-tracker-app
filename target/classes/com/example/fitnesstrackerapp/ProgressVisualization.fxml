@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.ScatterChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fitnesstrackerapp.admin.controller.ProgressVisualizationController">
+    <children>
+        <Label layoutX="300.0" layoutY="20.0" text="Progress Visualization">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+
+        <!-- Workout Bar Chart -->
+        <BarChart fx:id="workoutBarChart" layoutX="50.0" layoutY="313.0" prefHeight="200.0" prefWidth="300.0" title="Workouts Over Time">
+            <xAxis>
+                <CategoryAxis label="Days" />
+            </xAxis>
+            <yAxis>
+                <NumberAxis label="Workouts" />
+            </yAxis>
+        </BarChart>
+
+        <!-- Distance Line Chart -->
+        <LineChart fx:id="distanceLineChart" layoutX="433.0" layoutY="313.0" prefHeight="200.0" prefWidth="300.0" title="Distance Covered">
+            <xAxis>
+                <CategoryAxis label="Days" />
+            </xAxis>
+            <yAxis>
+                <NumberAxis label="Distance (km)" />
+            </yAxis>
+        </LineChart>
+
+        <!-- Weight Scatter Chart -->
+        <ScatterChart fx:id="weightScatterChart" layoutX="200.0" layoutY="63.0" prefHeight="250.0" prefWidth="400.0" title="Calories vs Weight">
+            <xAxis>
+                <NumberAxis label="Calories Burned" />
+            </xAxis>
+            <yAxis>
+                <NumberAxis label="Weight (kg)" />
+            </yAxis>
+        </ScatterChart>
+      <Button fx:id="btn_back" layoutX="378.0" layoutY="473.0" mnemonicParsing="false" text="Back" />
+    </children>
+</AnchorPane>

@@ -119,7 +119,7 @@
             <Font name="System Bold" size="13.0" />
          </font>
       </Label>
-      <ImageView fitHeight="111.0" fitWidth="158.0" layoutX="536.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="111.0" fitWidth="158.0" layoutX="638.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../images/img_2.png" />
          </image>
