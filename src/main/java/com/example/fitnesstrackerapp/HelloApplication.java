@@ -1,7 +1,5 @@
 package com.example.fitnesstrackerapp;
 
-import com.example.fitnesstrackerapp.admin.controller.FitGoalsController;
-import com.example.fitnesstrackerapp.admin.controller.SeeProgress;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
