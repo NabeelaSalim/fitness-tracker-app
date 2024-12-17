@@ -1,8 +1,6 @@
 package com.example.fitnesstrackerapp.admin.controller;
 
-import com.example.fitnesstrackerapp.admin.model.User;
 import com.example.fitnesstrackerapp.admin.service.UserService;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -18,7 +16,6 @@ public class LogoController implements Initializable {
             UserService userService = new UserService();
             userService.changeScence1(event,"user-signin.fxml", "Welcome to Fitness Tracker App");
         });
-
     }
 
 }

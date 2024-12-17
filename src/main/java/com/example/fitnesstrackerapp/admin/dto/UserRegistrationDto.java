@@ -1,7 +1,5 @@
 package com.example.fitnesstrackerapp.admin.dto;
 
-import jakarta.persistence.*;
-
 public class UserRegistrationDto {
 
     private String name;

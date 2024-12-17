@@ -9,6 +9,7 @@ public class UserDto {
     private String password;
     private String phone;
 
+
     public String getPhone() {
         return phone;
     }
@@ -49,8 +50,10 @@ public class UserDto {
         this.email = email;
     }
 
+
     public UserDto() {
     }
+
 
     public UserDto(String name, String email) {
         this.username = name;
@@ -65,9 +68,11 @@ public class UserDto {
         this.phone = phone;
     }
 
+
     @Override
     public String toString() {
         return "{userId:" + userId + ", username:" + username + ", email:" + email + ", password:" + password + ", phone:" + phone + "}";
 
     }
+
 }

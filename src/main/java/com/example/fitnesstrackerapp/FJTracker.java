@@ -12,7 +12,7 @@ public class FJTracker extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(FJTracker.class.getResource("logo-screen.fxml"));
 
         // Load the scene
-        Scene scene = new Scene(fxmlLoader.load(), 800, 500);
+        Scene scene = new Scene(fxmlLoader.load(), 800, 600);
 
         // Set the stage title and scene
         stage.setTitle("FitJourney - Your Very Own Fitness Tracker Application");
