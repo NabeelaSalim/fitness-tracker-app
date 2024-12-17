@@ -60,7 +60,7 @@ public class UserService {
                     if (createdvitals == null) {
                         changeScenceEmail(event, "user_vitals.fxml", "Welcome, " + email, email);
                     }else{
-                        changeScence1(event, "", "Welcome, " + email);
+                        changeScence1(event, "motivator_view.fxml", "Welcome, " + email);
                     }
 
                 } else {

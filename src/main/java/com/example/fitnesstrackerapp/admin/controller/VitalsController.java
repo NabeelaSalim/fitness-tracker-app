@@ -91,7 +91,7 @@ public class VitalsController implements Initializable {
 
 
                 userService.addUserVitals(event, userVitalDto, lbl_added);
-                userService.changeScence1(event, "profile-view.fxml", "Whats your go to motivator?");
+                userService.changeScence1(event, "motivator_view.fxml", "Whats your go to motivator?");
             }
         });
     }
