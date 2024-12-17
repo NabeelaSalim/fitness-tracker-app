@@ -66,6 +66,11 @@ public class LoginController implements Initializable {
                 }
                 UserService userService = new UserService();
 
+                if (!validateEmail(tf_email.getText())) {
+                    lblgetstarted.setText("Invalid Email! Please enter a valid email address.");
+                    return;
+                }
+
                 userService.validateLogin(event, tf_email.getText(), tf_password.getText(), lblgetstarted);
 
                 //after validate login create user
@@ -83,5 +88,9 @@ public class LoginController implements Initializable {
         });
 
 
+    }
+    // Helper method to validate the email
+    private boolean validateEmail(String email) {
+        return email.matches("^[\\w.-]+@[\\w.-]+\\.com$");
     }
 }

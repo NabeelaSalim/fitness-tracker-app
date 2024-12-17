@@ -87,6 +87,30 @@ public class SigninController implements Initializable {
                     lbl_work.setText("Details Incomplete! Please fill in all details");
                     return;
                 }*/
+                // Validate specific fields
+                if (!validateName(tf_username.getText())) {
+                    lbl_work.setText("Invalid Name! Name must contain only letters.");
+                    return;
+                }
+
+                if (tf_phone.getText().isEmpty()) {
+                    lbl_work.setText("Phone Number cannot be empty!");
+                    return;
+                }
+
+                String phoneValidationResponse = validatePhoneNumber(tf_phone.getText());
+                if (phoneValidationResponse != null) {
+                    lbl_work.setText(phoneValidationResponse);
+                    return;
+                }
+
+
+
+                if (!validateEmail(tf_email.getText())) {
+                    lbl_work.setText("Invalid Email! Please enter a valid email address.");
+                    return;
+                }
+
                 UserService userService = new UserService();
                 String password = PasswordHashing.hashPassword(tf_password.getText());
                 String confirm_password = PasswordHashing.hashPassword(tf_confirm_password.getText());
@@ -115,6 +139,37 @@ public class SigninController implements Initializable {
 
     }
 
+    // Helper method to validate the name
+    private boolean validateName(String name) {
+        return name.matches("[a-zA-Z ]+");
+    }
+
+    // Helper method to validate the phone number
+    private String validatePhoneNumber(String phoneNumber) {
+        // Check if the phone number contains only digits
+        if (!phoneNumber.matches("\\d*")) {
+            if (phoneNumber.length() != 10) {
+                return "Invalid Phone Number! It must contain exactly 10 digits and no letters.";
+            } else {
+                return "Invalid Phone Number! It must contain no letters.";
+            }
+        }
+
+        // Check if the phone number is exactly 10 digits long
+        if (phoneNumber.length() != 10) {
+            return "Invalid Phone Number! It must contain 10 digits.";
+        }
+
+        // If both checks pass
+        return null; // Indicates valid phone number
+    }
+
+
+
+    // Helper method to validate the email
+    private boolean validateEmail(String email) {
+        return email.matches("^[\\w.-]+@[\\w.-]+\\.com$");
+    }
 
     public void setUserInformation(String username) {
         lbl_work.setText("Welcome " + username);

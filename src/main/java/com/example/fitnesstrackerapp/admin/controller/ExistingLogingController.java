@@ -57,6 +57,11 @@ public class ExistingLogingController implements Initializable {
                     lblgetstarted.setText(missingFields.toString());
                     return;
                 }
+
+                if (!validateEmail(tf_email.getText())) {
+                    lblgetstarted.setText("Invalid Email! Please enter a valid email address.");
+                    return;
+                }
                 UserService userService = new UserService();
 
                 userService.validateExistingLogin(event, tf_email.getText(), tf_password.getText(), lblgetstarted);
@@ -74,5 +79,9 @@ public class ExistingLogingController implements Initializable {
         });
 
 
+    }
+    // Helper method to validate the email
+    private boolean validateEmail(String email) {
+        return email.matches("^[\\w.-]+@[\\w.-]+\\.com$");
     }
 }
