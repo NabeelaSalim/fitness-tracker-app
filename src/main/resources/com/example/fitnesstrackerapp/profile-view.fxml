@@ -1,29 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
-<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
-<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fitnesstrackerapp.admin.controller.ProfileController">
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" stylesheets="@FJStyle.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fitnesstrackerapp.admin.controller.ProfileController">
    <children>
-      <Label layoutX="24.0" layoutY="23.0" text="Profile" underline="true">
+      <Label layoutX="310.0" layoutY="16.0" text="Profile" underline="true">
          <font>
             <Font name="System Bold" size="46.0" />
          </font>
       </Label>
-      <Label fx:id="lbl_prfname" layoutX="359.0" layoutY="177.0" text="Name">
+      <Label fx:id="lbl_prfname" layoutX="375.0" layoutY="101.0" text="Name">
          <font>
             <Font name="System Bold" size="29.0" />
          </font>
       </Label>
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="322.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../images/profile.png" />
-         </image>
-      </ImageView>
-      <GridPane gridLinesVisible="true" layoutX="230.0" layoutY="233.0" prefHeight="181.0" prefWidth="339.0">
+      <GridPane gridLinesVisible="true" layoutX="375.0" layoutY="168.0" prefHeight="183.0" prefWidth="344.0">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" maxWidth="241.33333333333334" minWidth="10.0" prefWidth="237.33331807454428" />
           <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.3333740234375" minWidth="0.0" prefWidth="4.0000152587890625" />
@@ -77,20 +76,30 @@
             </Label>
          </children>
       </GridPane>
-      <Button fx:id="btn_settings" layoutX="651.0" layoutY="35.0" mnemonicParsing="false" text="Settings">
+      <Button fx:id="btn_settings" layoutX="651.0" layoutY="35.0" mnemonicParsing="false" styleClass="button-blue" text="Settings">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>
       </Button>
-      <Button fx:id="btn_viewprofile" layoutX="343.0" layoutY="424.0" mnemonicParsing="false" text="View Profile">
+      <Button fx:id="btn_viewprofile" layoutX="493.0" layoutY="372.0" mnemonicParsing="false" styleClass="button-blue" text="View Profile">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
       </Button>
-      <Button fx:id="btn_mainmenu" layoutX="651.0" layoutY="447.0" mnemonicParsing="false" text="Go to Main Menu">
+      <Button fx:id="btn_mainmenu" layoutX="651.0" layoutY="447.0" mnemonicParsing="false" styleClass="button-blue" stylesheets="@FJStyle.css" text="Go to Main Menu">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Button>
+      <ImageView fitHeight="350.0" fitWidth="486.0" layoutX="-30.0" layoutY="164.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/undraw_fitness-tracker_y5q5-2-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="131.0" fitWidth="182.0" layoutX="468.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/undraw_male-avatar_zkzx-removebg-preview.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

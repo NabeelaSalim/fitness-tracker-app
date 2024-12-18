@@ -1,26 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fitnesstrackerapp.admin.controller.MotivatorController">
+<AnchorPane prefHeight="500.0" prefWidth="800.0" stylesheets="@FJStyle.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fitnesstrackerapp.admin.controller.MotivatorController">
    <children>
       <Label fx:id="lb_mot" layoutX="140.0" layoutY="21.0" prefHeight="52.0" prefWidth="632.0" text="Whats your go-to motivator?">
          <font>
             <Font name="System Bold" size="36.0" />
          </font>
       </Label>
-      <CheckBox fx:id="cBox_loseWeight" layoutX="194.0" layoutY="109.0" mnemonicParsing="false" text="Lose weight">
+      <CheckBox fx:id="cBox_loseWeight" layoutX="283.0" layoutY="109.0" mnemonicParsing="false" text="Lose weight">
          <font>
             <Font size="25.0" />
          </font></CheckBox>
-      <CheckBox fx:id="cBox_active" layoutX="194.0" layoutY="162.0" mnemonicParsing="false" text="Be more active">
+      <CheckBox fx:id="cBox_active" layoutX="283.0" layoutY="162.0" mnemonicParsing="false" text="Be more active">
          <font>
             <Font size="25.0" />
          </font></CheckBox>
-      <CheckBox fx:id="cBox_bStrength" layoutX="194.0" layoutY="214.0" mnemonicParsing="false" text="Build Strength">
+      <CheckBox fx:id="cBox_bStrength" layoutX="283.0" layoutY="214.0" mnemonicParsing="false" text="Build Strength">
          <font>
             <Font size="24.0" />
          </font></CheckBox>
@@ -36,7 +39,7 @@
          <font>
             <Font size="25.0" />
          </font></CheckBox>
-      <Button fx:id="btn_continue" layoutX="605.0" layoutY="407.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="114.0" text="CONTINUE..." />
+      <Button fx:id="btn_continue" layoutX="198.0" layoutY="421.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="145.0" styleClass="button-blue" text="CONTINUE..." />
       <ImageView fitHeight="41.0" fitWidth="46.0" layoutX="149.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../images/Screenshot%202024-12-08%20at%2017.10.00.png" />
@@ -64,6 +67,16 @@
       <ImageView fitHeight="41.0" fitWidth="49.0" layoutX="415.0" layoutY="373.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../images/Screenshot%202024-12-08%20at%2017.10.58.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="295.0" fitWidth="389.0" layoutX="411.0" layoutY="225.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/undraw_jogging_tf9a-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="275.0" fitWidth="264.0" layoutX="8.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/undraw_activity-tracker_3o6r-2-removebg-preview.png" />
          </image>
       </ImageView>
    </children>

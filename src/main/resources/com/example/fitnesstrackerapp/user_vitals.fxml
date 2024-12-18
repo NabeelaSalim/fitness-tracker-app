@@ -1,20 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
-<AnchorPane prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: linear-gradient(to right, white, orange); -fx-padding: 20; -fx-spacing: 20; -fx-alignment: center;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fitnesstrackerapp.admin.controller.VitalsController">
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" stylesheets="@FJStyle.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fitnesstrackerapp.admin.controller.VitalsController">
    <children>
-      <Label fx:id="lbl_added" layoutX="311.0" layoutY="37.0" style="-fx-text-fill: darkorange; -fx-font-size: 24px; -fx-font-weight: bold; -fx-padding: 10;" text="Input Your Details" underline="true">
+      <Label fx:id="lbl_added" layoutX="192.0" layoutY="47.0" text="Input Your Details" underline="true">
          <font>
             <Font name="System Bold" size="40.0" />
          </font>
       </Label>
-      <GridPane layoutX="182.0" layoutY="111.0" prefHeight="268.0" prefWidth="595.0">
+      <GridPane layoutX="284.0" layoutY="111.0" prefHeight="268.0" prefWidth="493.0">
         <columnConstraints>
-          <ColumnConstraints hgrow="SOMETIMES" maxWidth="476.6667175292969" minWidth="10.0" prefWidth="387.33331298828125" />
-          <ColumnConstraints hgrow="SOMETIMES" maxWidth="492.66668701171875" minWidth="10.0" prefWidth="348.66668701171875" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="476.6667175292969" minWidth="10.0" prefWidth="254.5" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="492.66668701171875" minWidth="10.0" prefWidth="330.0" />
         </columnConstraints>
         <rowConstraints>
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
@@ -38,17 +45,17 @@
                   <Font name="System Bold" size="28.0" />
                </font>
             </Label>
-            <TextField fx:id="tf_age" promptText="Enter Your Current Age" style="-fx-background-color: white; -fx-border-color: orange; -fx-border-width: 2px; -fx-border-radius: 5px; -fx-padding: 5px;" GridPane.columnIndex="1">
+            <TextField fx:id="tf_age" promptText="Enter Your Current Age" styleClass="textfield" GridPane.columnIndex="1">
                <font>
                   <Font name="System Italic" size="12.0" />
                </font>
             </TextField>
-            <TextField fx:id="tf_height" layoutX="250.0" layoutY="31.0" promptText="Enter Your Current Height (in CM)" style="-fx-background-color: white; -fx-border-color: orange; -fx-border-width: 2px; -fx-border-radius: 5px; -fx-padding: 5px;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <TextField fx:id="tf_height" layoutX="250.0" layoutY="31.0" promptText="Enter Your Current Height (in CM)" styleClass="textfield" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <font>
                   <Font name="System Italic" size="12.0" />
                </font>
             </TextField>
-            <TextField fx:id="tf_currentweight" layoutX="250.0" layoutY="99.0" promptText="Enter Your Current Weight (in KG)" style="-fx-background-color: white; -fx-border-color: orange; -fx-border-width: 2px; -fx-border-radius: 5px; -fx-padding: 5px;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <TextField fx:id="tf_currentweight" layoutX="250.0" layoutY="99.0" promptText="Enter Your Current Weight (in KG)" styleClass="textfield" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <font>
                   <Font name="System Italic" size="12.0" />
                </font>
@@ -58,43 +65,28 @@
                   <Font name="System Bold" size="30.0" />
                </font>
             </Label>
-            <TextField fx:id="tf_targetweight" layoutX="250.0" layoutY="74.0" promptText="Enter Your Target Weight (in KG)" style="-fx-background-color: white; -fx-border-color: orange; -fx-border-width: 2px; -fx-border-radius: 5px; -fx-padding: 5px;" GridPane.columnIndex="1" GridPane.rowIndex="3">
+            <TextField fx:id="tf_targetweight" layoutX="250.0" layoutY="74.0" promptText="Enter Your Target Weight (in KG)" styleClass="textfield" GridPane.columnIndex="1" GridPane.rowIndex="3">
                <font>
                   <Font name="System Italic" size="12.0" />
                </font>
             </TextField>
          </children>
       </GridPane>
-      <Button fx:id="btn_submit" layoutX="352.0" layoutY="392.0" mnemonicParsing="false" style="-fx-background-color: orange; -fx-text-fill: white; -fx-font-size: 16px; -fx-font-weight: bold; -fx-padding: 10px 30px; -fx-border-radius: 10px;" text="Submit">
+      <Button fx:id="btn_submit" layoutX="581.0" layoutY="391.0" mnemonicParsing="false" styleClass="button-blue" text="Submit">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>
       </Button>
       <Label fx:id="lbl_email" layoutX="480.0" layoutY="391.0" prefHeight="45.0" prefWidth="56.0" text="Label" visible="false" />
-      <ImageView fitHeight="93.0" fitWidth="97.0" layoutX="79.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 10, 0.5, 0, 2);">
-         <image>
-            <Image url="@../../../images/Screenshot 2024-12-09 195152.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="155.0" fitWidth="133.0" layoutX="30.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 10, 0.5, 0, 2);">
-         <image>
-            <Image url="@../../../images/height.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="128.0" fitWidth="114.0" layoutX="30.0" layoutY="334.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 10, 0.5, 0, 2);">
-         <image>
-            <Image url="@../../../images/weight.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="84.0" fitWidth="88.0" layoutX="694.0" layoutY="379.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 10, 0.5, 0, 2);">
-         <image>
-            <Image url="@../../../images/target.png" />
-         </image>
-      </ImageView>
       <Label fx:id="lbl_checker" layoutX="155.0" layoutY="454.0" prefHeight="21.0" prefWidth="508.0" style="-fx-text-fill: red; -fx-font-size: 12px; -fx-font-style: italic;">
          <font>
             <Font name="System Italic" size="15.0" />
          </font>
       </Label>
+      <ImageView fitHeight="248.0" fitWidth="405.0" layoutX="-17.0" layoutY="249.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/undraw_profile-data_xkr9-removebg-preview.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

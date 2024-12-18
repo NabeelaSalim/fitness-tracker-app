@@ -7,10 +7,12 @@
 <?import javafx.scene.chart.ScatterChart?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fitnesstrackerapp.admin.controller.ProgressVisualizationController">
+<AnchorPane prefHeight="600.0" prefWidth="800.0" stylesheets="@FJStyle.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fitnesstrackerapp.admin.controller.ProgressVisualizationController">
     <children>
         <Label layoutX="300.0" layoutY="20.0" text="Progress Visualization">
             <font>
@@ -19,7 +21,7 @@
         </Label>
 
         <!-- Workout Bar Chart -->
-        <BarChart fx:id="workoutBarChart" layoutX="50.0" layoutY="313.0" prefHeight="200.0" prefWidth="300.0" title="Workouts Over Time">
+        <BarChart fx:id="workoutBarChart" layoutX="50.0" layoutY="313.0" prefHeight="233.0" prefWidth="314.0" title="Workouts Over Time">
             <xAxis>
                 <CategoryAxis label="Days" />
             </xAxis>
@@ -29,7 +31,7 @@
         </BarChart>
 
         <!-- Distance Line Chart -->
-        <LineChart fx:id="distanceLineChart" layoutX="433.0" layoutY="313.0" prefHeight="200.0" prefWidth="300.0" title="Distance Covered">
+        <LineChart fx:id="distanceLineChart" layoutX="433.0" layoutY="313.0" prefHeight="212.0" prefWidth="352.0" title="Distance Covered">
             <xAxis>
                 <CategoryAxis label="Days" />
             </xAxis>
@@ -39,7 +41,7 @@
         </LineChart>
 
         <!-- Weight Scatter Chart -->
-        <ScatterChart fx:id="weightScatterChart" layoutX="200.0" layoutY="63.0" prefHeight="250.0" prefWidth="400.0" title="Calories vs Weight">
+        <ScatterChart fx:id="weightScatterChart" layoutX="33.0" layoutY="69.0" prefHeight="250.0" prefWidth="400.0" title="Calories vs Weight">
             <xAxis>
                 <NumberAxis label="Calories Burned" />
             </xAxis>
@@ -47,6 +49,11 @@
                 <NumberAxis label="Weight (kg)" />
             </yAxis>
         </ScatterChart>
-      <Button fx:id="btn_back" layoutX="378.0" layoutY="473.0" mnemonicParsing="false" text="Back" />
+      <Button fx:id="btn_back" layoutX="378.0" layoutY="473.0" mnemonicParsing="false" styleClass="button-blue" text="Back" />
+      <ImageView fitHeight="250.0" fitWidth="336.0" layoutX="458.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/undraw_pie-graph_8m6b-removebg-preview.png" />
+         </image>
+      </ImageView>
     </children>
 </AnchorPane>

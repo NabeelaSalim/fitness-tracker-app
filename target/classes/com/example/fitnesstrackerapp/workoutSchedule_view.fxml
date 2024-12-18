@@ -1,94 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fitnesstrackerapp.admin.controller.WorkoutScheduleController">
+<AnchorPane prefHeight="500.0" prefWidth="800.0" stylesheets="@FJStyle.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fitnesstrackerapp.admin.controller.WorkoutScheduleController">
    <children>
-      <Button fx:id="btn_bodyweight" layoutX="440.0" layoutY="35.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="169.0" text="Body Weight">
+      <Button fx:id="btn_bodyweight" layoutX="202.0" layoutY="64.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="169.0" styleClass="button-blue" text="Body Weight">
          <font>
             <Font size="20.0" />
          </font></Button>
-      <Button fx:id="btn_core" layoutX="440.0" layoutY="89.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="149.0" text="Core/Abs">
+      <Button fx:id="btn_core" layoutX="233.0" layoutY="117.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="149.0" styleClass="button-blue" text="Core/Abs">
          <font>
             <Font size="20.0" />
          </font></Button>
-      <Button fx:id="btn_lowerbody" layoutX="438.0" layoutY="149.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="163.0" text="Lower Body">
+      <Button fx:id="btn_lowerbody" layoutX="258.0" layoutY="172.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="163.0" styleClass="button-blue" text="Lower Body">
          <font>
             <Font size="20.0" />
          </font></Button>
-      <Button fx:id="btn_upperbody" layoutX="442.0" layoutY="210.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="177.0" text="Upper Body">
+      <Button fx:id="btn_upperbody" layoutX="283.0" layoutY="226.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="177.0" styleClass="button-blue" text="Upper Body">
          <font>
             <Font size="20.0" />
          </font></Button>
-      <Button fx:id="btn_yoga" layoutX="444.0" layoutY="264.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="141.0" text="Yoga">
+      <Button fx:id="btn_yoga" layoutX="318.0" layoutY="279.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="141.0" styleClass="button-blue" text="Yoga">
          <font>
             <Font size="20.0" />
          </font></Button>
-      <Button fx:id="btn_cardio" layoutX="440.0" layoutY="315.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="149.0" text="Cardio">
+      <Button fx:id="btn_cardio" layoutX="346.0" layoutY="333.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="149.0" styleClass="button-blue" text="Cardio">
          <font>
             <Font size="20.0" />
          </font></Button>
-      <Button fx:id="btn_strenthtraining" layoutX="442.0" layoutY="365.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="207.0" text="Strenght Training">
+      <Button fx:id="btn_strenthtraining" layoutX="368.0" layoutY="392.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="207.0" styleClass="button-blue" text="Strenght Training">
          <font>
             <Font size="21.0" />
          </font></Button>
-      <Button fx:id="btn_hit" layoutX="444.0" layoutY="423.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="141.0" text="HIIT">
+      <Button fx:id="btn_hit" layoutX="402.0" layoutY="451.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="141.0" styleClass="button-blue" text="HIIT">
          <font>
             <Font size="20.0" />
          </font></Button>
-      <Label fx:id="lb_workout" layoutX="53.0" layoutY="78.0" prefHeight="42.0" prefWidth="201.0" text="WorkOut">
+      <Label fx:id="lb_workout" layoutX="23.0" layoutY="101.0" prefHeight="42.0" prefWidth="201.0" text="WorkOut">
          <font>
             <Font size="44.0" />
          </font>
       </Label>
-      <Label fx:id="lb_schedule" layoutX="53.0" layoutY="118.0" prefHeight="44.0" prefWidth="230.0" text="Schedule">
+      <Label fx:id="lb_schedule" layoutX="9.0" layoutY="135.0" prefHeight="44.0" prefWidth="230.0" text="Schedule">
          <font>
             <Font size="50.0" />
          </font>
       </Label>
-      <Button fx:id="btn_back" layoutX="74.0" layoutY="392.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="102.0" text="BACK" />
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="38.0" layoutY="184.0" pickOnBounds="true" preserveRatio="true">
+      <Button fx:id="btn_back" layoutX="647.0" layoutY="447.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="102.0" styleClass="button-blue" text="BACK" />
+      <ImageView fitHeight="325.0" fitWidth="375.0" layoutX="-23.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../images/Screenshot%202024-12-09%20at%2020.26.41.png" />
-         </image></ImageView>
-      <ImageView fitHeight="40.0" fitWidth="66.0" layoutX="367.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../images/Screenshot%202024-12-09%20at%2020.51.24.png" />
-         </image></ImageView>
-      <ImageView fitHeight="40.0" fitWidth="66.0" layoutX="359.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../images/Screenshot%202024-12-09%20at%2020.51.30.png" />
-         </image></ImageView>
-      <ImageView fitHeight="40.0" fitWidth="66.0" layoutX="376.0" layoutY="149.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../images/Screenshot%202024-12-09%20at%2020.51.40.png" />
-         </image></ImageView>
-      <ImageView fitHeight="40.0" fitWidth="66.0" layoutX="286.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="34.0" fitWidth="59.0" layoutX="377.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../images/Screenshot%202024-12-09%20at%2020.51.47.png" />
-         </image></ImageView>
-      <ImageView fitHeight="40.0" fitWidth="66.0" layoutX="378.0" layoutY="264.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../images/Screenshot%202024-12-09%20at%2020.51.52.png" />
+            <Image url="@../../../images/undraw_healthy-habit_2ata-removebg-preview.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="40.0" fitWidth="66.0" layoutX="371.0" layoutY="314.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="276.0" fitWidth="410.0" layoutX="472.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../images/Screenshot%202024-12-09%20at%2020.52.03.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="40.0" fitWidth="66.0" layoutX="375.0" layoutY="366.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../images/Screenshot%202024-12-09%20at%2020.52.08.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="40.0" fitWidth="66.0" layoutX="373.0" layoutY="423.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../images/Screenshot%202024-12-09%20at%2020.52.14.png" />
+            <Image url="@../../../images/undraw_check-boxes_ewf2-removebg-preview.png" />
          </image>
       </ImageView>
    </children>

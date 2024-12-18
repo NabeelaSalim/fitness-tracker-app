@@ -1,129 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fitnesstrackerapp.admin.controller.StrengthTrainingController">
+<AnchorPane prefHeight="500.0" prefWidth="800.0" stylesheets="@FJStyle.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fitnesstrackerapp.admin.controller.StrengthTrainingController">
    <children>
-      <HBox layoutX="40.0" layoutY="40.0" prefHeight="26.0" prefWidth="500.0" />
-      <Label fx:id="welcomeText" layoutX="42.0" layoutY="195.0" prefHeight="15.0" prefWidth="271.0" text="   Beginner 3 sets">
+      <Label fx:id="welcomeText" layoutX="42.0" layoutY="149.0" prefHeight="15.0" prefWidth="271.0" text="   Beginner 3 sets">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
       </Label>
-      <GridPane gridLinesVisible="true" layoutX="17.0" layoutY="221.0" prefHeight="223.0" prefWidth="767.0">
-         <columnConstraints>
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-         </columnConstraints>
-         <rowConstraints>
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-         </rowConstraints>
-         <children>
-            <TextArea prefHeight="47.0" prefWidth="284.0" promptText="Pushups" style="-fx-background-color: black;" text="Goblet Squats                Reps:12-15&#10;                                             Rest:60 sec&#10;">
-               <font>
-                  <Font size="11.0" />
-               </font>
-            </TextArea>
-            <TextArea layoutX="10.0" layoutY="8.0" prefHeight="200.0" prefWidth="200.0" promptText="Pushups" style="-fx-background-color: black;" text="Goblet Squats                Reps:15-18&#10;                                             Rest:60 sec" GridPane.columnIndex="1">
-               <font>
-                  <Font size="11.0" />
-               </font>
-            </TextArea>
-            <TextArea layoutX="10.0" layoutY="8.0" prefHeight="200.0" prefWidth="200.0" promptText="Pushups" style="-fx-background-color: black;" text="Goblet Squats                Reps:15-18&#10;                                             Rest:60 sec" GridPane.columnIndex="2">
-               <font>
-                  <Font size="11.0" />
-               </font>
-            </TextArea>
-            <TextArea prefHeight="200.0" prefWidth="200.0" text="Chest Press                          Reps:12-15&#10;                                                   Rest:60 sec" GridPane.rowIndex="1">
-               <font>
-                  <Font size="11.0" />
-               </font>
-            </TextArea>
-            <TextArea prefHeight="200.0" prefWidth="200.0" text="Chest Press                          Reps:15-18&#10;                                                   Rest:60 sec" GridPane.columnIndex="1" GridPane.rowIndex="1">
-               <font>
-                  <Font size="11.0" />
-               </font>
-            </TextArea>
-            <TextArea prefHeight="200.0" prefWidth="200.0" text="Chest Press                          Reps:18-20&#10;                                                   Rest:60 sec" GridPane.columnIndex="2" GridPane.rowIndex="1">
-               <font>
-                  <Font size="11.0" />
-               </font>
-            </TextArea>
-            <TextArea prefHeight="44.0" prefWidth="287.0" text="DeadLifts                      Reps:12-15&#10;                                          Rest:60 sec" GridPane.rowIndex="2">
-               <font>
-                  <Font size="11.0" />
-               </font>
-            </TextArea>
-            <TextArea prefHeight="200.0" prefWidth="200.0" text="DeadLifts                      Reps:15-18&#10;                                          Rest:60 sec" GridPane.columnIndex="1" GridPane.rowIndex="2">
-               <font>
-                  <Font size="11.0" />
-               </font>
-            </TextArea>
-            <TextArea prefHeight="200.0" prefWidth="200.0" text="DeadLifts                      Reps:18-20&#10;                                          Rest:60 sec" GridPane.columnIndex="2" GridPane.rowIndex="2">
-               <font>
-                  <Font size="11.0" />
-               </font>
-            </TextArea>
-            <TextArea prefHeight="200.0" prefWidth="200.0" text="Shoulder Press                 Reps:12-15 &#10;                                                Rest:60 sec" GridPane.rowIndex="3">
-               <font>
-                  <Font size="11.0" />
-               </font>
-            </TextArea>
-            <TextArea prefHeight="200.0" prefWidth="200.0" text="Shoulder Press                 Reps:15-18 &#10;                                                Rest:60 sec" GridPane.columnIndex="1" GridPane.rowIndex="3">
-               <font>
-                  <Font size="11.0" />
-               </font>
-            </TextArea>
-            <TextArea prefHeight="200.0" prefWidth="200.0" text="Shoulder Press                 Reps:18-20&#10;                                                Rest:60 sec" GridPane.columnIndex="2" GridPane.rowIndex="3">
-               <font>
-                  <Font size="11.0" />
-               </font>
-            </TextArea>
-            <TextArea prefHeight="200.0" prefWidth="200.0" text="Dumbell Rows             Reps:12-15&#10;                                          Rest:60" GridPane.rowIndex="4">
-               <font>
-                  <Font size="11.0" />
-               </font>
-            </TextArea>
-            <TextArea prefHeight="200.0" prefWidth="200.0" text="Dumbell Rows             Reps:15-18&#10;                                          Rest:60" GridPane.columnIndex="1" GridPane.rowIndex="4">
-               <font>
-                  <Font size="11.0" />
-               </font>
-            </TextArea>
-            <TextArea prefHeight="200.0" prefWidth="200.0" text="Dumbell Rows             Reps:18-20&#10;                                          Rest:60" GridPane.columnIndex="2" GridPane.rowIndex="4">
-               <font>
-                  <Font size="11.0" />
-               </font>
-            </TextArea>
-         </children>
-      </GridPane>
-      <Button fx:id="btn_strengthtrainingstartworkout" layoutX="381.0" layoutY="455.0" mnemonicParsing="false" text="Start Workout" />
-      <Label fx:id="welcomeText1" layoutX="319.0" layoutY="195.0" prefHeight="15.0" prefWidth="248.0" text="Intermediate 4 sets">
+      <Button fx:id="btn_strengthtrainingstartworkout" layoutX="381.0" layoutY="458.0" mnemonicParsing="false" styleClass="button-blue" text="Start Workout" />
+      <Label fx:id="welcomeText1" layoutX="319.0" layoutY="149.0" prefHeight="15.0" prefWidth="248.0" text="Intermediate 4 sets">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
       </Label>
-      <Label fx:id="welcomeText11" layoutX="622.0" layoutY="194.0" prefHeight="17.0" prefWidth="136.0" text="Advanced 5 sets">
+      <Label fx:id="welcomeText11" layoutX="580.0" layoutY="148.0" prefHeight="17.0" prefWidth="136.0" text="Advanced 5 sets">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
       </Label>
-      <ImageView fitHeight="106.0" fitWidth="163.0" layoutX="567.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="211.0" fitWidth="204.0" layoutX="92.0" layoutY="-10.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../images/img_3.png" />
+            <Image url="@../../../images/undraw_healthy-habit_2ata-removebg-preview.png" />
          </image>
       </ImageView>
-      <Label layoutX="72.0" layoutY="62.0" prefHeight="72.0" prefWidth="618.0" text="    Strength training">
+      <Label layoutX="178.0" layoutY="6.0" prefHeight="95.0" prefWidth="554.0" text="    Strength training">
          <font>
             <Font name="System Bold" size="61.0" />
          </font>
       </Label>
+      <ImageView fitHeight="282.0" fitWidth="828.0" layoutX="48.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/Screenshot%202024-12-18%20at%2010.11.28%E2%80%AFPM.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
