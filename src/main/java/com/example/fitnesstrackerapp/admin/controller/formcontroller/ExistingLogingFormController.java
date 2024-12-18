@@ -1,5 +1,6 @@
-package com.example.fitnesstrackerapp.admin.controller;
+package com.example.fitnesstrackerapp.admin.controller.formcontroller;
 
+import com.example.fitnesstrackerapp.admin.controller.ExistingLogInController;
 import com.example.fitnesstrackerapp.admin.dto.UserDto;
 import com.example.fitnesstrackerapp.admin.service.UserService;
 import javafx.event.ActionEvent;
@@ -13,14 +14,7 @@ import javafx.scene.control.TextField;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class LoginController implements Initializable {
-    /*@FXML
-    private Button getStartedButton;
-
-    public void getStartedButtonOnAction(ActionEvent event) {
-        Stage stage = (Stage) getStartedButton.getScene().getWindow();
-        stage.close();
-    }*/
+public class ExistingLogingFormController implements Initializable {
     @FXML
     public Label lblgetstarted;
     @FXML
@@ -64,24 +58,33 @@ public class LoginController implements Initializable {
                     lblgetstarted.setText(missingFields.toString());
                     return;
                 }
-                UserService userService = new UserService();
 
-                userService.validateLogin(event, tf_email.getText(), tf_password.getText(), lblgetstarted);
+                if (!validateEmail(tf_email.getText())) {
+                    lblgetstarted.setText("Invalid Email! Please enter a valid email address.");
+                    return;
+                }
 
-                //after validate login create user
                 UserDto userDto = new UserDto();
                 userDto.setEmail(tf_email.getText());
                 userDto.setPassword(tf_password.getText());
                 userDto.setName(tf_email.getText());
 
+                ExistingLogInController existingLogInController = new ExistingLogInController();
+                existingLogInController.validateExistingUser(userDto, event, lblgetstarted);
+
+
             }
         });
-
         btn_signup.setOnAction(event -> {
             UserService userService = new UserService();
             userService.changeScence1(event, "user-signin.fxml", "Create an Account");
         });
 
 
+    }
+
+    // Helper method to validate the email
+    private boolean validateEmail(String email) {
+        return email.matches("^[\\w.-]+@[\\w.-]+\\.com$");
     }
 }

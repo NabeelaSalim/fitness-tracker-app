@@ -1,8 +1,8 @@
 package com.example.fitnesstrackerapp.admin.service;
 
 import com.example.fitnesstrackerapp.FJTracker;
-import com.example.fitnesstrackerapp.admin.controller.SigninController;
-import com.example.fitnesstrackerapp.admin.controller.VitalsController;
+import com.example.fitnesstrackerapp.admin.controller.formcontroller.SigninFormController;
+import com.example.fitnesstrackerapp.admin.controller.formcontroller.VitalsFormController;
 import com.example.fitnesstrackerapp.admin.dao.UserDaoImpl;
 import com.example.fitnesstrackerapp.admin.dto.UserDto;
 import com.example.fitnesstrackerapp.admin.dto.UserRegistrationResponseDto;
@@ -60,7 +60,7 @@ public class UserService {
                     if (createdvitals == null) {
                         changeScenceEmail(event, "user_vitals.fxml", "Welcome, " + email, email);
                     }else{
-                        changeScence1(event, "motivator_view.fxml", "Welcome, " + email);
+                        changeScence1(event, "select_view.fxml", "Welcome, " + email);
                     }
 
                 } else {
@@ -144,7 +144,7 @@ public class UserService {
                 FXMLLoader loader = new FXMLLoader(FJTracker.class.getResource(fxmlFile));
                 root = loader.load();
 
-                SigninController signinController = loader.getController();
+                SigninFormController signinController = loader.getController();
                 signinController.setUserInformation(username);
             } catch (IOException e) {
                 e.printStackTrace();
@@ -182,7 +182,7 @@ public class UserService {
             FXMLLoader loader = new FXMLLoader(FJTracker.class.getResource(fxmlFile));
             root = loader.load();
 
-            VitalsController vitalsController = loader.getController();
+            VitalsFormController vitalsController = loader.getController();
             vitalsController.setUserInformation(email);
         } catch (IOException e) {
             e.printStackTrace();
