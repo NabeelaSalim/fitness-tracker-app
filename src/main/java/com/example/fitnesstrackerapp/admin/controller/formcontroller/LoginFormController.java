@@ -1,5 +1,6 @@
-package com.example.fitnesstrackerapp.admin.controller;
+package com.example.fitnesstrackerapp.admin.controller.formcontroller;
 
+import com.example.fitnesstrackerapp.admin.controller.LogInController;
 import com.example.fitnesstrackerapp.admin.dto.UserDto;
 import com.example.fitnesstrackerapp.admin.service.UserService;
 import javafx.event.ActionEvent;
@@ -13,14 +14,8 @@ import javafx.scene.control.TextField;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class LoginController implements Initializable {
-    /*@FXML
-    private Button getStartedButton;
+public class LoginFormController implements Initializable {
 
-    public void getStartedButtonOnAction(ActionEvent event) {
-        Stage stage = (Stage) getStartedButton.getScene().getWindow();
-        stage.close();
-    }*/
     @FXML
     public Label lblgetstarted;
     @FXML
@@ -64,20 +59,22 @@ public class LoginController implements Initializable {
                     lblgetstarted.setText(missingFields.toString());
                     return;
                 }
-                UserService userService = new UserService();
+
 
                 if (!validateEmail(tf_email.getText())) {
                     lblgetstarted.setText("Invalid Email! Please enter a valid email address.");
                     return;
                 }
 
-                userService.validateLogin(event, tf_email.getText(), tf_password.getText(), lblgetstarted);
 
                 //after validate login create user
                 UserDto userDto = new UserDto();
                 userDto.setEmail(tf_email.getText());
                 userDto.setPassword(tf_password.getText());
                 userDto.setName(tf_email.getText());
+
+                LogInController logInController = new LogInController();
+                logInController.logInUser(userDto,event,lblgetstarted);
 
             }
         });
@@ -89,6 +86,7 @@ public class LoginController implements Initializable {
 
 
     }
+
     // Helper method to validate the email
     private boolean validateEmail(String email) {
         return email.matches("^[\\w.-]+@[\\w.-]+\\.com$");

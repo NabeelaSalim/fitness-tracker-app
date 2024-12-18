@@ -1,5 +1,6 @@
-package com.example.fitnesstrackerapp.admin.controller;
+package com.example.fitnesstrackerapp.admin.controller.formcontroller;
 
+import com.example.fitnesstrackerapp.admin.controller.ExistingLogInController;
 import com.example.fitnesstrackerapp.admin.dto.UserDto;
 import com.example.fitnesstrackerapp.admin.service.UserService;
 import javafx.event.ActionEvent;
@@ -13,7 +14,7 @@ import javafx.scene.control.TextField;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class ExistingLogingController implements Initializable {
+public class ExistingLogingFormController implements Initializable {
     @FXML
     public Label lblgetstarted;
     @FXML
@@ -62,14 +63,15 @@ public class ExistingLogingController implements Initializable {
                     lblgetstarted.setText("Invalid Email! Please enter a valid email address.");
                     return;
                 }
-                UserService userService = new UserService();
-
-                userService.validateExistingLogin(event, tf_email.getText(), tf_password.getText(), lblgetstarted);
 
                 UserDto userDto = new UserDto();
                 userDto.setEmail(tf_email.getText());
                 userDto.setPassword(tf_password.getText());
                 userDto.setName(tf_email.getText());
+
+                ExistingLogInController existingLogInController = new ExistingLogInController();
+                existingLogInController.validateExistingUser(userDto, event, lblgetstarted);
+
 
             }
         });
@@ -80,6 +82,7 @@ public class ExistingLogingController implements Initializable {
 
 
     }
+
     // Helper method to validate the email
     private boolean validateEmail(String email) {
         return email.matches("^[\\w.-]+@[\\w.-]+\\.com$");
