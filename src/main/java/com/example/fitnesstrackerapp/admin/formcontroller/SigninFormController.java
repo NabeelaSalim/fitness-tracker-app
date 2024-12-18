@@ -1,4 +1,4 @@
-package com.example.fitnesstrackerapp.admin.controller.formcontroller;
+package com.example.fitnesstrackerapp.admin.formcontroller;
 
 import com.example.fitnesstrackerapp.admin.controller.SignInController;
 import com.example.fitnesstrackerapp.admin.dto.UserDto;

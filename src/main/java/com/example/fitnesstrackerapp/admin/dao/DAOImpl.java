@@ -2,9 +2,7 @@ package com.example.fitnesstrackerapp.admin.dao;
 
 import com.example.fitnesstrackerapp.admin.model.User;
 
-import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.ObjectOutputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -13,6 +11,7 @@ import java.util.List;
 
 public class DAOImpl implements DAOInterface {
     private static final String RESOURCES_FOLDER = "src/main/resources/appdata/";
+    private List<User> UserInformation = new ArrayList<>();
 
     private Path getResourcesPath(String filename) {
         return Paths.get(RESOURCES_FOLDER + filename);
@@ -24,14 +23,16 @@ public class DAOImpl implements DAOInterface {
         User user = new User();
         List<User> users = new ArrayList<>();
 
-        user.setName("Rayhan Rizwan");
-        user.setUserId(1L);
+        user.setName("rayhan");
+        user.setUserId(3L);
+        user.setEmail("rayhan@gmail.com");
+        user.setPassword("0000");
         users.add(user);
 
 
         try {
             // Create the path for the text file in the resources folder
-            Path filePath = getResourcesPath("user_" + user.getUserId() + ".txt");
+            Path filePath = getResourcesPath("usersDetails" + ".txt");
 
             // Write user data to the file
             Files.writeString(filePath, user.toString());
@@ -59,4 +60,6 @@ public class DAOImpl implements DAOInterface {
     public Object getObj(int id) {
         return null;
     }
+
+
 }

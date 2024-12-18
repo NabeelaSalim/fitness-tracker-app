@@ -8,11 +8,9 @@ import java.util.List;
 public interface DAOInterface<T> {
 
 
-    List<T> addObject(List<T> object);
+    List addObject(List object);
 
     List<T> getAll();
-
     String add(List<T> object);
-
     T getObj(int id);
 }

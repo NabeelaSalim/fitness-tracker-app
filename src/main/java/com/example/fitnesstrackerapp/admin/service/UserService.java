@@ -1,8 +1,8 @@
 package com.example.fitnesstrackerapp.admin.service;
 
 import com.example.fitnesstrackerapp.FJTracker;
-import com.example.fitnesstrackerapp.admin.controller.formcontroller.SigninFormController;
-import com.example.fitnesstrackerapp.admin.controller.formcontroller.VitalsFormController;
+import com.example.fitnesstrackerapp.admin.formcontroller.SigninFormController;
+import com.example.fitnesstrackerapp.admin.formcontroller.VitalsFormController;
 import com.example.fitnesstrackerapp.admin.dao.UserDaoImpl;
 import com.example.fitnesstrackerapp.admin.dto.UserDto;
 import com.example.fitnesstrackerapp.admin.dto.UserRegistrationResponseDto;

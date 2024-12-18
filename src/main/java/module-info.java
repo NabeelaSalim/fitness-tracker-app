@@ -11,6 +11,6 @@ module com.example.fitnesstrackerapp {
     opens com.example.fitnesstrackerapp.admin.controller to javafx.fxml;
     exports com.example.fitnesstrackerapp;
     exports com.example.fitnesstrackerapp.admin.controller;
-    exports com.example.fitnesstrackerapp.admin.controller.formcontroller;
-    opens com.example.fitnesstrackerapp.admin.controller.formcontroller to javafx.fxml;
+    exports com.example.fitnesstrackerapp.admin.formcontroller;
+    opens com.example.fitnesstrackerapp.admin.formcontroller to javafx.fxml;
 }
