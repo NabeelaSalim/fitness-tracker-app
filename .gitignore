@@ -1,0 +1,63 @@
+# IntelliJ specific files
+.idea/
+*.iml
+*.iws
+
+# Compiled class files
+*.class
+
+# Log files
+*.log
+
+# BlueJ files (optional, if using)
+*.ctxt
+
+# Mac system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+ehthumbs.db
+
+# JavaFX build artifacts
+/build/
+out/
+*.jar
+
+# Temporary files created by editors or the IDE
+*.swp
+*.tmp
+*.bak
+*.sublime-workspace
+*.sublime-project
+
+# IntelliJ cache
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/dictionaries
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.xml
+.idea/**/dataSources.local.xml
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
+.idea/**/shelf/
+
+# User-specific files
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Gradle files (if applicable)
+.gradle/
+build/
+
+# Maven files (if applicable)
+target/
+*.war
+*.ear
+
+# JavaFX configurations and runtime
+lib/

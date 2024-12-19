@@ -1,4 +1,0 @@
-
-
-{userId:1, username:Rayhan Rizwan, email:rayhanrizwan05@gmail.com, password:8448}
-{userId:1, username:Rayhan Rizwan, email:rayhanrizwan05@gmail.com, password:8448}
