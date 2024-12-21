@@ -1,7 +1,9 @@
 package com.example.fitnesstrackerapp.admin.formcontroller;
 
 import com.example.fitnesstrackerapp.admin.controller.ExistingLogInController;
+import com.example.fitnesstrackerapp.admin.dao.DAOImpl;
 import com.example.fitnesstrackerapp.admin.dto.UserDto;
+import com.example.fitnesstrackerapp.admin.model.User;
 import com.example.fitnesstrackerapp.admin.service.UserService;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -63,11 +65,19 @@ public class ExistingLogingFormController implements Initializable {
                     lblgetstarted.setText("Invalid Email! Please enter a valid email address.");
                     return;
                 }
-
                 UserDto userDto = new UserDto();
+
+                DAOImpl dao = new DAOImpl();
+                User user = dao.getObjbyEmail(tf_email.getText());
+                if (user!=null) {
+                    userDto.setUserId(user.getUserId());
+                }
+
                 userDto.setEmail(tf_email.getText());
                 userDto.setPassword(tf_password.getText());
                 userDto.setName(tf_email.getText());
+                userDto.setUserId(userDto.getUserId());
+
 
                 ExistingLogInController existingLogInController = new ExistingLogInController();
                 existingLogInController.validateExistingUser(userDto, event, lblgetstarted);

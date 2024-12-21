@@ -9,6 +9,8 @@ public class UserVital {
     private String current_weight;
     private String target_weight;
 
+    public UserVital(Long userid, String age, String height, String currentWeight, String targetWeight) {
+    }
 
 
     public Long getUserId() {
@@ -18,7 +20,6 @@ public class UserVital {
     public void setUserId(Long userId) {
         this.userId = userId;
     }
-
 
 
     public String getAge() {
@@ -57,8 +58,6 @@ public class UserVital {
     }
 
 
-
-
     public UserVital(String age, String height, String current_weight, String target_weight) {
         this.age = age;
         this.height = height;
@@ -68,7 +67,7 @@ public class UserVital {
 
     @Override
     public String toString() {
-        return "{userId:" + userId + ",age:"+ age+"height:"+ height + "current_weight:"+ current_weight + "target_weight:"+ target_weight + "}";
+        return "\n{\n\"userId\":" + userId + ",\n\"age\":" + age + ",\n\"height\":" + height + ",\n\"current_weight\":" + current_weight + ",\n\"target_weight\":" + target_weight + "\n}";
 
     }
 

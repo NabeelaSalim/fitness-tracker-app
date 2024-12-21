@@ -9,6 +9,6 @@ public class VitalsController {
     public void userVital(UserVitalDto userVitalDto, ActionEvent event, Label lbl_added){
         UserService userService = new UserService();
         userService.addUserVitals(event, userVitalDto, lbl_added);
-        userService.changeScence1(event, "motivator_view.fxml", "Whats your go to motivator?");
+
     }
 }

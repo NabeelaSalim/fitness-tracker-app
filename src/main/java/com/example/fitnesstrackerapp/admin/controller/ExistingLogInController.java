@@ -9,7 +9,7 @@ import javafx.scene.control.Label;
 public class ExistingLogInController {
     public void validateExistingUser(UserDto userDto, ActionEvent event, Label lblgetstarted) {
         UserService userService = new UserService();
-        userService.validateExistingLogin(event, userDto.getEmail(), userDto.getPassword(), lblgetstarted);
+        userService.validateExistingLogin(event, userDto.getEmail(), userDto.getPassword(), lblgetstarted, userDto.getUserId());
 
     }
 

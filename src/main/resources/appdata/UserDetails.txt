@@ -1,4 +1,25 @@
-
-
-{userId:1, username:Rayhan Rizwan, email:rayhanrizwan05@gmail.com, password:8448}
-{userId:1, username:Rayhan Rizwan, email:rayhanrizwan05@gmail.com, password:8448}
+[ {
+  "userId" : 1,
+  "email" : "rayhan@gmail.com",
+  "password" : "71bafb61f0793029c0b0539d071a7b3e0fd322abd31e425312775a6d0691ae20",
+  "phone" : "0585778735",
+  "name" : "Rayhan Rizwan Manegar"
+}, {
+  "userId" : 2,
+  "email" : "nabeela@gmail.com",
+  "password" : "5994471abb01112afcc18159f6cc74b4f511b99806da59b3caf5a9c173cacfc5",
+  "phone" : "0123456789",
+  "name" : "Nabeela Salim"
+}, {
+  "userId" : 3,
+  "email" : "namb@gmail.com",
+  "password" : "9af15b336e6a9619928537df30b2e6a2376569fcf9d7e773eccede65606529a0",
+  "phone" : "0123456789",
+  "name" : "Nambua"
+}, {
+  "userId" : 4,
+  "email" : "azeem@gmail.com",
+  "password" : "9af15b336e6a9619928537df30b2e6a2376569fcf9d7e773eccede65606529a0",
+  "phone" : "0123456789",
+  "name" : "Azeem"
+} ]

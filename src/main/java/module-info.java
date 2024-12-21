@@ -3,7 +3,7 @@ module com.example.fitnesstrackerapp {
     requires javafx.fxml;
     requires jakarta.persistence;
     requires spring.web;
-    requires java.desktop;
+    requires com.fasterxml.jackson.databind;
 
 
     //opens com.example.fitnesstrackerapp to javafx.fxml;
@@ -13,4 +13,5 @@ module com.example.fitnesstrackerapp {
     exports com.example.fitnesstrackerapp.admin.controller;
     exports com.example.fitnesstrackerapp.admin.formcontroller;
     opens com.example.fitnesstrackerapp.admin.formcontroller to javafx.fxml;
+    exports com.example.fitnesstrackerapp.admin.model to com.fasterxml.jackson.databind;
 }

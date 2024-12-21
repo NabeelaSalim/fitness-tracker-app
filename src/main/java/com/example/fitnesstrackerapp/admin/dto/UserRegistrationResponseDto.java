@@ -3,9 +3,11 @@ package com.example.fitnesstrackerapp.admin.dto;
 
 import com.example.fitnesstrackerapp.admin.model.User;
 
+import java.util.List;
+
 public class UserRegistrationResponseDto {
 
-    User user;
+    List<User> users ;
 
     String responseMessage;
 
@@ -13,18 +15,17 @@ public class UserRegistrationResponseDto {
 
     }
 
-    public UserRegistrationResponseDto(User user, String responseMessage) {
-        this.user = user;
+    public UserRegistrationResponseDto(List<User> users, String responseMessage) {
+        this.users = users;
         this.responseMessage = responseMessage;
     }
 
-
-    public User getUser() {
-        return user;
+    public List<User> getUsers() {
+        return users;
     }
 
-    public void setUser(User user) {
-        this.user = user;
+    public void setUsers(List<User> users) {
+        this.users = users;
     }
 
     public String getResponseMessage() {
@@ -34,6 +35,4 @@ public class UserRegistrationResponseDto {
     public void setResponseMessage(String responseMessage) {
         this.responseMessage = responseMessage;
     }
-
-
 }

@@ -11,7 +11,7 @@ public class SignInController {
         UserService userService = new UserService();
         //User createdUser = userService.addUser(event, userDto, lbl_work, confirm_password);
         UserRegistrationResponseDto responseDto = userService.userSigning(event, userDto, lbl_work, confirm_password);
-        if (responseDto != null && responseDto.getUser() != null) {
+        if (responseDto != null && !responseDto.getUsers().isEmpty()) {
             userService.changeScence1(event, "user-login.fxml", "You can now Login to your account");
         } else {
             lbl_work.setText(responseDto.getResponseMessage());
